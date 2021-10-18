@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Set Interval Slider</title>
+
+<style type="text/css">
+	img {
+  display:none;
+  width:1200px;
+height: 500px;
+}
+</style>
+
+</head>
+<body>
+<div>
+  <center>
+  <img src="https://wallpaperfx.com/view_image/stunning-nature-corner-landscape-1280x720-wallpaper-10708.jpg" alt="image1">
+  <img src="https://wallpaperaccess.com/full/537107.jpg" alt="image2">
+  <img src="https://images.hdqwalls.com/download/best-nature-image-1280x720.jpg" alt="image3">
+  <img src="https://cdn.wallpapersafari.com/48/18/i5r7dS.jpg" alt="image4">
+  <img src="https://images.wallpaperscraft.com/image/single/beautiful_scenery_mountains_lake_nature_93318_1280x720.jpg" alt="image5">
+  </center>
+</div>
+
+<script type="text/javascript">
+var slider = document.querySelectorAll("img"); 
+let i = 0;
+setInterval(function(){ 
+  slider.forEach( (img, i) => {
+    img.style.display = 'none';
+  })
+  if( i == slider.length) {
+    i = 0; 
+  }
+ slider[i].style.display = 'block';
+ i++;
+}, 1000);
+</script>
+
+</body>
+</html>

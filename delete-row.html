@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delete Row</title>
+<style type="text/css">
+table, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <td>Sr. No.</td>
+    <td>Name</td>
+    <td>Department</td>
+    <td>Designation</td>
+    <td>Branch</td>
+    <td>Grade</td>
+    <td>Action</td>
+  </tr>
+  <tr id="row2">
+    <td>1.</td>
+    <td>Rahul K</td>
+    <td>IT Software</td>
+    <td>Sr. Developer</td>
+    <td>Pune</td>
+    <td>A1</td>
+    <td><button onclick="myFunction()">Delete</button></td>
+  </tr>
+   <tr id="row3">
+    <td>2.</td>
+    <td>Pooja K</td>
+    <td>Networking</td>
+    <td>Sr. Consultant</td>
+    <td>Mumbai</td>
+    <td>A1</td>
+    <td><button onclick="myFunction1()">Delete</button></td>
+  </tr>
+</table>
+<br> 
+
+
+
+<script>
+function myFunction() {
+  document.getElementById("row2").remove();
+}
+</script>
+
+<script>
+function myFunction1() {
+  document.getElementById("row3").remove();
+}
+</script>
+
+
+</body>
+</html>
